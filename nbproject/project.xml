@@ -5,7 +5,7 @@
             <name>Silent-Alert-Watch</name>
             <creation-uuid>b2697eec-2f30-4035-b426-e9d8b965f5e2</creation-uuid>
             <make-project-type>0</make-project-type>
-            <c-extensions/>
+            <c-extensions>c</c-extensions>
             <cpp-extensions/>
             <header-extensions/>
             <asminc-extensions/>
