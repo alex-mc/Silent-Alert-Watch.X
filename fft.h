@@ -22,4 +22,3 @@ void fix_fft(volatile short fr[], volatile short fi[], short m);
 #endif
 
 #endif	/* FFT_H */
-
