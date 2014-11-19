@@ -1,10 +1,3 @@
-/*
- * File:   classifier.h
- * Author: alexmc
- *
- * Created on November 19, 2014, 12:54 PM
- */
-
 #include "classifier.h"
 
 struct Classification *classify(volatile short fr[], volatile short fi[]) {
