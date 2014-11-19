@@ -28,7 +28,7 @@ void main(void) {
     volatile short fr[31];
     overlay volatile short fi[31];
     struct Classification classification;
-    setup();
+    setup(); // setup
     LATCbits.LATC2 = 1;
     while(1) {
         ISRflag = 0;
