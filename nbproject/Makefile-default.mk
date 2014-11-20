@@ -45,17 +45,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=saw_classifier_main.c fft.c classifier.c
+SOURCEFILES_QUOTED_IF_SPACED=saw_classifier_main.c classifier.c fft.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/saw_classifier_main.o ${OBJECTDIR}/fft.o ${OBJECTDIR}/classifier.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/saw_classifier_main.o.d ${OBJECTDIR}/fft.o.d ${OBJECTDIR}/classifier.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/saw_classifier_main.o ${OBJECTDIR}/classifier.o ${OBJECTDIR}/fft.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/saw_classifier_main.o.d ${OBJECTDIR}/classifier.o.d ${OBJECTDIR}/fft.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/saw_classifier_main.o ${OBJECTDIR}/fft.o ${OBJECTDIR}/classifier.o
+OBJECTFILES=${OBJECTDIR}/saw_classifier_main.o ${OBJECTDIR}/classifier.o ${OBJECTDIR}/fft.o
 
 # Source Files
-SOURCEFILES=saw_classifier_main.c fft.c classifier.c
+SOURCEFILES=saw_classifier_main.c classifier.c fft.c
 
 
 CFLAGS=
@@ -97,14 +97,6 @@ ${OBJECTDIR}/saw_classifier_main.o: saw_classifier_main.c  nbproject/Makefile-${
 	@${DEP_GEN} -d ${OBJECTDIR}/saw_classifier_main.o 
 	@${FIXDEPS} "${OBJECTDIR}/saw_classifier_main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
-${OBJECTDIR}/fft.o: fft.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/fft.o.d 
-	@${RM} ${OBJECTDIR}/fft.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/fft.o   fft.c 
-	@${DEP_GEN} -d ${OBJECTDIR}/fft.o 
-	@${FIXDEPS} "${OBJECTDIR}/fft.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
-	
 ${OBJECTDIR}/classifier.o: classifier.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/classifier.o.d 
@@ -112,6 +104,14 @@ ${OBJECTDIR}/classifier.o: classifier.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/classifier.o   classifier.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/classifier.o 
 	@${FIXDEPS} "${OBJECTDIR}/classifier.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/fft.o: fft.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/fft.o.d 
+	@${RM} ${OBJECTDIR}/fft.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/fft.o   fft.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/fft.o 
+	@${FIXDEPS} "${OBJECTDIR}/fft.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 else
 ${OBJECTDIR}/saw_classifier_main.o: saw_classifier_main.c  nbproject/Makefile-${CND_CONF}.mk
@@ -122,14 +122,6 @@ ${OBJECTDIR}/saw_classifier_main.o: saw_classifier_main.c  nbproject/Makefile-${
 	@${DEP_GEN} -d ${OBJECTDIR}/saw_classifier_main.o 
 	@${FIXDEPS} "${OBJECTDIR}/saw_classifier_main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
-${OBJECTDIR}/fft.o: fft.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/fft.o.d 
-	@${RM} ${OBJECTDIR}/fft.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/fft.o   fft.c 
-	@${DEP_GEN} -d ${OBJECTDIR}/fft.o 
-	@${FIXDEPS} "${OBJECTDIR}/fft.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
-	
 ${OBJECTDIR}/classifier.o: classifier.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/classifier.o.d 
@@ -137,6 +129,14 @@ ${OBJECTDIR}/classifier.o: classifier.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/classifier.o   classifier.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/classifier.o 
 	@${FIXDEPS} "${OBJECTDIR}/classifier.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/fft.o: fft.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/fft.o.d 
+	@${RM} ${OBJECTDIR}/fft.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/fft.o   fft.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/fft.o 
+	@${FIXDEPS} "${OBJECTDIR}/fft.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 endif
 
